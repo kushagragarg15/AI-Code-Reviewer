@@ -1,0 +1,27 @@
+# Documentation files
+ALL_API_PATHS_FIXED.md
+CHECKLIST.txt
+DEBUG_JSON_ERROR.md
+DEPLOYMENT_GUIDE.md
+DEPLOY_CHECKLIST.md
+FINAL_FIX_APPLIED.md
+FIXES_APPLIED.md
+FIX_MODULE_ERROR.md
+LOGIN_SIGNUP_FIX.md
+MONGODB_SETUP_GUIDE.md
+PROXY_FIX_APPLIED.md
+SETUP_COMPLETE.md
+START_HERE.md
+TAILWIND_V3_MIGRATION_COMPLETE.md
+QUICK_START.md
+
+# Test and setup scripts
+check-setup.bat
+cleanup-and-reinstall.bat
+push-to-github.bat
+test-api.bat
+backend/test_mongodb.py
+
+# Environment files
+backend/.env
+frontend/.env.production
