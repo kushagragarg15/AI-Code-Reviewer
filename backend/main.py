@@ -11,17 +11,16 @@ app = FastAPI(
 origins = [
     "http://localhost:5173",
     "http://localhost:3000",
-    "https://www.ai-code-reviewer-nine-nu.vercel.app",
-    "https://www.ai-code-reviewer-git-main-krishs-projects-d8c81696.vercel.app",
-    "https://www.ai-code-reviewer-krishs-projects-d8c81696.vercel.app",
+    "https://ai-code-reviewer-c9nn.onrender.com",
+    "*"  # Allow all for now, restrict after Vercel deployment
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    # allow_origins=origins,      
+    allow_origins=["*"],  # Temporary - update after getting Vercel URL
     allow_methods=["*"],        
-    allow_headers=["*"],        
+    allow_headers=["*"],
+    allow_credentials=True,
 )
 
 app.include_router(users.router,prefix="/api", tags=["Users & Auth"])
